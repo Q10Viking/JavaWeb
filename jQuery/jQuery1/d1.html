@@ -1,0 +1,86 @@
+
+<!--val,html,text-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+	<script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		
+		$("input[name='username']").prop("value","Q10Viking");
+		//3.1 获取 username的value属性的值
+		var va=$("input[name='username']").val();
+		//alert(va);
+		//3.2 设置 username的默认值为"许多多"
+		$("input[name='username']").val("许多多");
+		//3.3通过html获取div标签体的内容
+		var content1=$("div").html();
+		//alert(content1);
+		//3.4通过html设置div标签体的内容
+		$("div").html("please study hard!");
+		
+		//3.5通过text获取div标签体的内容
+		var content2=$("div").text();
+		//alert(content2);
+		//3.6通过text设置div标签体的内容
+		$("div").text("Hello Q10Viking");
+		
+		//3.7 两者设置值的区别
+		$("div").html("<a href='#'>The link is about jQuery</a>")
+		alert("see the different");
+		$("div").text("<a href='#'>The link is about jQuery</a>")
+		//3.8 两者获取值的区别
+		var content3=$("#sp").text();
+		alert("text():\n"+content3);
+		var content4=$("#sp").html();
+		alert("html(): \n"+content4);
+		
+		});	
+	</script>
+	<style type="text/css">
+		.textClass {
+			background-color: #ff0;
+		}
+	</style>
+</head>
+<body>
+	<h3>表单</h3>
+	<form action="">
+		<table border="1">
+			<tr id="tr1">
+				<td><label>姓名</label></td>
+				<td><input type="text" name="username"/></td>
+			</tr>
+			<tr>
+				<td><span>密码</span></td>
+				<td><input type="password" name="password" /></td>
+			</tr>
+			<tr>
+				<td>性别</td>
+				<td>
+					<input type="radio" name="gender" value="男" />男
+					<input type="radio" name="gender" value="女" />女
+				</td>
+			</tr>
+			
+			<tr>
+				<td></td>
+				<td>
+					<button type="button">普通按钮</button>
+					<input type="submit" value="提交按钮" />
+					<input type="reset" value="重置按钮" />
+				</td>
+			</tr>
+		</table>
+	</form>
+	
+	
+	<h3>公告信息</h3>
+	<div>
+		Hello jQuery.
+	</div>
+	<span id="sp">外span<a href='#'>内置超链</a></span>
+</body>
+</html>

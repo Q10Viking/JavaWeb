@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="./jquery/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript">  
+		//load page 
+		$(function(){
+			alert("first");
+		})
+
+		$(document).ready(function(){
+			alert("second");
+			//bundle
+			$("input").click(function(){
+				alert("click");
+			})
+		})
+
+	</script>
+</head>
+<body>
+	<input type="button" name="" value="click">
+</body>
+</html>

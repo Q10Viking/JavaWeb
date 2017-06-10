@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+</head>
+<body>
+	<input type="text" name="username" id="username" value="Hello jQuery">
+</body>
+
+</html>
+
+<script src="./jquery/jquery-1.11.0.min.js">
+</script>
+<script >
+		var $username1=$("#username");
+		alert($username1.val());
+		//DOM===>>>jQuery  
+		var obj=document.getElementById("username");
+		var $username2=$(obj);
+		alert($username2.val()); 
+
+		//jQuery===>>>DOM  
+		var obj2=$username1[0];
+		alert(obj2.value);
+</script>

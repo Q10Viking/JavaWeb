@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		#id1,#id2,#id3{
+			border: 1px solid #000;
+			width: 100px;
+			height: 100px;
+		}
+	</style>
+	<script src="./jquery/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#btn1").click(function(){
+				$("#id1").toggle();
+			})
+
+			$("#btn2").click(function(){
+				//$("#id2").slideUp();
+				$("#id2").slideToggle();
+			})
+
+			$("#btn3").click(function(){
+				//$("#id3").fadeOut(); 
+				$("#id3").fadeToggle(1000);
+			})
+		})
+	</script>
+</head>
+<body>  
+	<div align="center">
+	<input type="button" name="" value="显示/隐藏" id="btn1">
+	<div id="id1">Hide and Show example</div>  
+	<br>
+	<input type="button" name="" value="滑出/滑入" id="btn2">
+	<div id="id2"> sideDown and sideUp example</div> 
+	<br>
+	<input type="button" name="" value="淡出/淡入" id="btn3">
+	<div id="id3">fadeIn and fadeOut example</div> 
+	<br>
+	</div>
+</body>
+</html>

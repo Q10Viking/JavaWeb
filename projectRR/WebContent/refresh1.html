@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="5;/projectRR/refresh2.html">
+<title>refresh1</title>
+</head>
+<body>
+	<div align="center">
+		<span>经过<span id="sid">5</span>秒后即将跳转</span>
+	</div>
+</body>
+
+<script type="text/javascript">
+
+	var num;
+	var ele;
+	onload=function(){
+		setInterval(changeSeconds,1000);
+		ele = document.getElementById("sid");
+		num=5;
+	}
+	
+	function changeSeconds(){
+		num = num-1;
+		ele.innerHTML=num;
+	}
+		
+</script>
+</html>

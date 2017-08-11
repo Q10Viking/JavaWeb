@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>RequestResponse</title>
+</head>
+<body>
+
+	<div align="center">
+		<a href="/projectRR/lf">测试重定向</a>
+		<br/>
+		<br/>
+		<a href="/projectRR/refresh1.html">refresh1</a>
+		<br/>
+		<br/>
+		<a href="/projectRR/request?name=Q10Viking&password=123">测试request</a>
+		<br/>
+		<br/>
+		<a href="/projectRR/rh">测试refer</a>
+		<br/>
+		<br/>
+		<a href="/projectRR/param?username=Q10Viking&password=123&hobby=music&hobby=computer  
+		">请求参数测试</a>
+	</div>
+	
+	<br/>
+	<br/>
+	<hr/>
+	<div align="center">
+		<span align="center">请求中文乱码问题</span>	<br/>
+			<form action="/projectRR/form" method="post">
+			username:&nbsp;&nbsp;&nbsp;<input name="username"><br/>
+			password:&nbsp;&nbsp;&nbsp;<input name="password"><br/>
+			<input type="submit"><br/>
+		</form>
+	</div>
+	<br/>
+	<br/>
+	<hr/>
+	<div align="center">
+	<a href="http://localhost/projectRR/ts?username=hello.txt">测试IE</a>
+	<br/>
+	<br/>
+	<a href="http://localhost/projectRR/disone?book=Thiking-in-Java">请求转发</a>
+	</div>
+	
+</body>
+</html>
